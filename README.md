@@ -1,6 +1,3 @@
-Here is a sample `README.md` file for your project:
-
-```markdown
 # Memory Encryption and Decryption Project
 
 ## Description
@@ -24,87 +21,134 @@ This project demonstrates various functionalities related to memory encryption a
 - OpenSSL Library
 - Windows Operating System
 
-## How to Run
+## Installation
 
-### Step 1: Navigate to the Directory
+1. **Download and Install OpenSSL**
 
-Open a terminal or command prompt and navigate to the project directory:
+   - Go to the [OpenSSL website](https://www.openssl.org/) and download the appropriate version for Windows.
+   - Install OpenSSL and make a note of the installation directory (e.g., `C:/OpenSSL-Win64`).
 
-```sh
-cd "/d/College Codes/Sem4/C++/project"
-```
+2. **Set Up Environment Variables**
 
-### Step 2: Compile the Project
+   - Add the OpenSSL `bin` directory to your system's `PATH` environment variable.
 
-Compile the project using the g++ compiler:
+   ```sh
+   set PATH=%PATH%;C:\OpenSSL-Win64\bin
+   ```
 
-```sh
-g++ -o project.exe project.cpp -LC:/OpenSSL-Win64/lib -lssl -lcrypto -IC:/OpenSSL-Win64/include
-```
+## Compilation
 
-### Step 3: Verify the Compiled Executable
+1. **Navigate to the Project Directory**
 
-Ensure that the executable file has been created:
+   Open a terminal or command prompt and navigate to the project directory:
 
-```sh
-ls
-```
+   ```sh
+   cd "/d/College Codes/Sem4/C++/project" #it's in my device
+   ```
 
-You should see `project.exe` listed in the directory.
+2. **Compile the Project**
 
-### Step 4: Run the Compiled Executable
+   Compile the project using the g++ compiler:
 
-Execute the compiled program:
+   ```sh
+   g++ -o project.exe project.cpp -LC:/OpenSSL-Win64/lib -lssl -lcrypto -IC:/OpenSSL-Win64/include
+   ```
 
-```sh
-./project.exe
-```
+3. **Verify the Compiled Executable**
 
-If the program runs successfully, you will see a menu with various options corresponding to the features listed above.
+   Ensure that the executable file has been created:
+
+   ```sh
+   ls
+   ```
+
+   You should see `project.exe` listed in the directory.
+
+## Running the Program
+
+1. **Execute the Compiled Program**
+
+   Run the executable:
+
+   ```sh
+   ./project.exe
+   ```
+
+   If the program runs successfully, you will see a menu with various options corresponding to the features listed above.
 
 ## Usage
 
 When the program is running, you will be prompted with a menu to select an option. Enter the number corresponding to the desired functionality and follow any additional prompts.
 
-## Example
+### Example
 
 Here is an example of how to run the program and simulate memory usage:
 
-1. Run the executable:
+1. **Run the Executable:**
 
-    ```sh
-    ./project.exe
-    ```
+   ```sh
+   ./project.exe
+   ```
 
-2. Enter `1` to select "Simulate Memory Usage".
+2. **Enter `1` to Select "Simulate Memory Usage":**
 
-    ```
-    Enter option: 1
-    ```
+   ```
+   Enter option: 1
+   ```
 
-3. You will see the encrypted memory content displayed.
+3. **You Will See the Encrypted Memory Content Displayed:**
 
-    ```
-    Encrypted Memory Content: ~╡╠ó↓÷<╥╠xN/äs£i╗♦╞¡î 1₧♦TÜ α∩Φ
-    ```
+   ```
+   Encrypted Memory Content: ~╡╠ó↓÷<╥╠xN/äs£i╗♦╞¡î 1₧♦TÜ α∩Φ
+   ```
+
+### Options
+
+1. **Simulate Memory Usage**
+
+   Encrypt and decrypt a sample memory content.
+
+2. **Measure Memory Usage**
+
+   Allocate and free memory securely.
+
+3. **Demonstrate Encryption and Decryption**
+
+   Show the process of encrypting and decrypting a sample memory content.
+
+4. **Save Encrypted Data to File**
+
+   Save encrypted memory content to a file named `encrypted_data.bin`.
+
+5. **Load Encrypted Data from File and Decrypt**
+
+   Load and decrypt data from `encrypted_data.bin`.
+
+6. **Memory Dump**
+
+   Display memory content in hexadecimal and ASCII format.
+
+7. **Encrypt/Decrypt User Input**
+
+   Encrypt and decrypt user-provided input.
+
+8. **Exit**
+
+   Exit the program.
 
 ## Troubleshooting
 
-- Ensure the OpenSSL library is correctly installed and the paths to the library and include files are correct.
-- If you encounter any compilation errors, verify that the project files and OpenSSL installation are in the correct locations.
-- For issues related to memory allocation, ensure sufficient memory is available on your system.
+- **OpenSSL Not Found**: Ensure the OpenSSL library is correctly installed and the paths to the library and include files are correct.
+- **Compilation Errors**: Verify that the project files and OpenSSL installation are in the correct locations.
+- **Memory Allocation Issues**: Ensure sufficient memory is available on your system.
 
-## License
 
-This project is licensed under the MIT License.
 
 ## Author
 
 Srijan Saraswat
 Divyanshu Chander
-Devansh Maoudgil
+Devansh Moudgil
 ## Acknowledgments
 
 - OpenSSL Project (https://www.openssl.org/)
-```
-
