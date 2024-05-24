@@ -100,11 +100,11 @@ This project is licensed under the MIT License.
 
 ## Author
 
-[Your Name]
-
+Srijan Saraswat
+Divyanshu Chander
+Devansh Maoudgil
 ## Acknowledgments
 
 - OpenSSL Project (https://www.openssl.org/)
 ```
 
-Replace `[Your Name]` with your actual name. Save this content in a file named `README.md` in the root directory of your project. This file provides a comprehensive guide on what the project does, how to set it up, and how to run it.
