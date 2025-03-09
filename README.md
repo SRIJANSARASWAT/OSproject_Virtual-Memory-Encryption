@@ -1,11 +1,9 @@
 # Memory Encryption and Decryption Project
 
-## Description
-
+## 🚀 Description
 This project demonstrates various functionalities related to memory encryption and decryption using the OpenSSL library. The main functionalities include simulating memory usage, measuring memory usage, encrypting and decrypting memory, saving and loading encrypted data, performing memory dumps, and more.
 
-## Features
-
+## 📌 Features
 1. **Simulate Memory Usage**: Encrypt and decrypt a sample memory content.
 2. **Measure Memory Usage**: Allocate and free memory securely.
 3. **Demonstrate Encryption and Decryption**: Show the process of encrypting and decrypting a sample memory content.
@@ -15,140 +13,96 @@ This project demonstrates various functionalities related to memory encryption a
 7. **Encrypt/Decrypt User Input**: Encrypt and decrypt user-provided input.
 8. **Exit**: Exit the program.
 
-## Prerequisites
-
+## 🛠️ Prerequisites
 - C++ Compiler (g++)
 - OpenSSL Library
 - Windows Operating System
 
-## Installation
+## 📂 Installation
+### 1️⃣ Download and Install OpenSSL
+- Go to the [OpenSSL website](https://www.openssl.org/) and download the appropriate version for Windows.
+- Install OpenSSL and make a note of the installation directory (e.g., `C:/OpenSSL-Win64`).
 
-1. **Download and Install OpenSSL**
+### 2️⃣ Set Up Environment Variables
+Add the OpenSSL `bin` directory to your system's `PATH` environment variable.
 
-   - Go to the [OpenSSL website](https://www.openssl.org/) and download the appropriate version for Windows.
-   - Install OpenSSL and make a note of the installation directory (e.g., `C:/OpenSSL-Win64`).
+```sh
+set PATH=%PATH%;C:\OpenSSL-Win64\bin
+```
 
-2. **Set Up Environment Variables**
+## ⚙️ Compilation
+### 1️⃣ Navigate to the Project Directory
+Open a terminal or command prompt and navigate to the project directory:
 
-   - Add the OpenSSL `bin` directory to your system's `PATH` environment variable.
+```sh
+cd "/d/College Codes/Sem4/C++/project" # It's in my device
+```
 
-   ```sh
-   set PATH=%PATH%;C:\OpenSSL-Win64\bin
-   ```
+### 2️⃣ Compile the Project
+Compile the project using the g++ compiler:
 
-## Compilation
+```sh
+g++ -o project.exe project.cpp -LC:/OpenSSL-Win64/lib -lssl -lcrypto -IC:/OpenSSL-Win64/include
+```
 
-1. **Navigate to the Project Directory**
+### 3️⃣ Verify the Compiled Executable
+Ensure that the executable file has been created:
 
-   Open a terminal or command prompt and navigate to the project directory:
+```sh
+ls
+```
 
-   ```sh
-   cd "/d/College Codes/Sem4/C++/project" #it's in my device
-   ```
+You should see `project.exe` listed in the directory.
 
-2. **Compile the Project**
+## ▶️ Running the Program
+### 1️⃣ Execute the Compiled Program
+Run the executable:
 
-   Compile the project using the g++ compiler:
+```sh
+./project.exe
+```
 
-   ```sh
-   g++ -o project.exe project.cpp -LC:/OpenSSL-Win64/lib -lssl -lcrypto -IC:/OpenSSL-Win64/include
-   ```
+If the program runs successfully, you will see a menu with various options corresponding to the features listed above.
 
-3. **Verify the Compiled Executable**
-
-   Ensure that the executable file has been created:
-
-   ```sh
-   ls
-   ```
-
-   You should see `project.exe` listed in the directory.
-
-## Running the Program
-
-1. **Execute the Compiled Program**
-
-   Run the executable:
-
-   ```sh
-   ./project.exe
-   ```
-
-   If the program runs successfully, you will see a menu with various options corresponding to the features listed above.
-
-## Usage
-
+## 📝 Usage
 When the program is running, you will be prompted with a menu to select an option. Enter the number corresponding to the desired functionality and follow any additional prompts.
 
 ### Example
+#### 1️⃣ Run the Executable:
+```sh
+./project.exe
+```
 
-Here is an example of how to run the program and simulate memory usage:
+#### 2️⃣ Enter `1` to Select "Simulate Memory Usage":
+```
+Enter option: 1
+```
 
-1. **Run the Executable:**
+#### 3️⃣ You Will See the Encrypted Memory Content Displayed:
+```
+Encrypted Memory Content: ~╡╠ó↓÷<╥╠xN/äs£i╗♦╞¡î 1₧♦TÜ α∩Φ
+```
 
-   ```sh
-   ./project.exe
-   ```
+## 📋 Options
+1. **Simulate Memory Usage**: Encrypt and decrypt a sample memory content.
+2. **Measure Memory Usage**: Allocate and free memory securely.
+3. **Demonstrate Encryption and Decryption**: Show the process of encrypting and decrypting a sample memory content.
+4. **Save Encrypted Data to File**: Save encrypted memory content to a file named `encrypted_data.bin`.
+5. **Load Encrypted Data from File and Decrypt**: Load and decrypt data from `encrypted_data.bin`.
+6. **Memory Dump**: Display memory content in hexadecimal and ASCII format.
+7. **Encrypt/Decrypt User Input**: Encrypt and decrypt user-provided input.
+8. **Exit**: Exit the program.
 
-2. **Enter `1` to Select "Simulate Memory Usage":**
-
-   ```
-   Enter option: 1
-   ```
-
-3. **You Will See the Encrypted Memory Content Displayed:**
-
-   ```
-   Encrypted Memory Content: ~╡╠ó↓÷<╥╠xN/äs£i╗♦╞¡î 1₧♦TÜ α∩Φ
-   ```
-
-### Options
-
-1. **Simulate Memory Usage**
-
-   Encrypt and decrypt a sample memory content.
-
-2. **Measure Memory Usage**
-
-   Allocate and free memory securely.
-
-3. **Demonstrate Encryption and Decryption**
-
-   Show the process of encrypting and decrypting a sample memory content.
-
-4. **Save Encrypted Data to File**
-
-   Save encrypted memory content to a file named `encrypted_data.bin`.
-
-5. **Load Encrypted Data from File and Decrypt**
-
-   Load and decrypt data from `encrypted_data.bin`.
-
-6. **Memory Dump**
-
-   Display memory content in hexadecimal and ASCII format.
-
-7. **Encrypt/Decrypt User Input**
-
-   Encrypt and decrypt user-provided input.
-
-8. **Exit**
-
-   Exit the program.
-
-## Troubleshooting
-
+## 🔧 Troubleshooting
 - **OpenSSL Not Found**: Ensure the OpenSSL library is correctly installed and the paths to the library and include files are correct.
 - **Compilation Errors**: Verify that the project files and OpenSSL installation are in the correct locations.
 - **Memory Allocation Issues**: Ensure sufficient memory is available on your system.
 
+## 👨‍💻 Authors
+- **Srijan Saraswat**
+- **Divyanshu Chander**
+- **Devansh Moudgil**
 
+## 🏆 Acknowledgments
+- OpenSSL Project [https://www.openssl.org/]
 
-## Author
-
-Srijan Saraswat
-Divyanshu Chander
-Devansh Moudgil
-## Acknowledgments
-
-- OpenSSL Project (https://www.openssl.org/)
